@@ -12,11 +12,11 @@ namespace TP1
         {
         int poids;
         double taille;
-        Console.WriteLine("Veuillez indiquer votre poids en kg :");
+        Console.WriteLine("Veuillez indiquer votre poids en kg :"); // indiquer le poids
         poids = int.Parse(Console.ReadLine());
-        Console.WriteLine("Veuillez indiquer votre taille en m :");
+        Console.WriteLine("Veuillez indiquer votre taille en m :"); // indiquer la taille
         taille = double.Parse(Console.ReadLine());
-        double imc = (poids) / (Math.Pow(taille, 2));
+        double imc = (poids) / (Math.Pow(taille, 2)); // formule de l'imc
             if (imc < 16.5)
             {
                 Console.WriteLine("Votre imc est de " + imc + " , vous êtes en Dénutrition");
